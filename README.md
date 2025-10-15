@@ -18,6 +18,7 @@ O objetivo é processar uma entrada de texto (`plaintext`) e aplicar sobre ela u
 
 ## Estrutura do Projeto
 
+```
 .
 ├── doc/
 │   └── documentacao.pdf
@@ -28,7 +29,7 @@ O objetivo é processar uma entrada de texto (`plaintext`) e aplicar sobre ela u
 │   ├── cipher_tb.sv
 │   └── cipher_bonus_tb.sv
 └── README.md
-
+```
 
 ## Como Simular
 
