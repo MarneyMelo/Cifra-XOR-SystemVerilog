@@ -4,7 +4,7 @@
 
 Este repositório contém a minha implementação para um trabalho prático da disciplina de **Introdução aos Sistemas Lógicos** (ISL) na UFMG. O desafio era criar, em uma linguagem de descrição de hardware, um sistema de cifra XOR sequencial.
 
-O objetivo é processar uma entrada de texto (`plaintext`) e aplicar sobre ela uma chave de 8 bits, com a operação sendo controlada por uma Máquina de Estados Finita (FSM) que gerencia o processo bit a bit. Embora o enunciado original solicitasse Verilog, o projeto foi desenvolvido em **SystemVerilog** para aproveitar recursos mais modernos da linguagem, resultando em um código mais limpo e organizado.
+O objetivo é processar uma entrada de texto (`plaintext`) e aplicar sobre ela uma chave de 8 bits, com a operação sendo controlada por uma Máquina de Estados Finita (FSM) que gerencia o processo bit a bit.|O projeto foi desenvolvido em **SystemVerilog**, resultando em um código limpo e organizado.
 
 ## Funcionalidades
 
