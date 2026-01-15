@@ -1,22 +1,22 @@
-# Cifra XOR Sequencial em SystemVerilog
+# Sequential XOR Cipher in SystemVerilog
 
-## Sobre o Projeto
+## About the Project
 
-Este repositório contém a minha implementação para um trabalho prático da disciplina de **Introdução aos Sistemas Lógicos** (ISL) na UFMG. O desafio era criar, em uma linguagem de descrição de hardware, um sistema de cifra XOR sequencial.
+This repository contains my implementation for a practical assignment for the **Introduction to Logic Systems** (ISL) course at UFMG. The challenge was to create a sequential XOR cipher system using a hardware description language.
 
-O objetivo é processar uma entrada de texto (`plaintext`) e aplicar sobre ela uma chave de 8 bits, com a operação sendo controlada por uma Máquina de Estados Finita (FSM) que gerencia o processo bit a bit.|O projeto foi desenvolvido em **SystemVerilog**, resultando em um código limpo e organizado.
+The goal is to process a text input (`plaintext`) and apply an 8-bit key using the XOR operation. The process is controlled bit-by-bit by a **Finite State Machine (FSM)**. The project was developed in **SystemVerilog**, resulting in clean and organized code.
 
-## Funcionalidades
+## Features
 
-* **Módulo Principal (`cipher.sv`):** Implementa a cifra para um texto de 8 bits com uma chave de 8 bits, executando a operação em 8 ciclos de clock.
-* **Módulo Bônus (`cipher_bonus.sv`):** Uma versão parametrizada que suporta textos de tamanho `N`, maiores que a chave. A lógica implementa a reutilização cíclica da chave de 8 bits para cobrir toda a extensão do texto.
+* **Main Module (`cipher.sv`):** Implements the cipher for 8-bit text with an 8-bit key. It completes the operation in 8 clock cycles.
+* **Bonus Module (`cipher_bonus.sv`):** A parameterized version that supports text of size `N` (larger than the key). The logic reuses the 8-bit key cyclically to cover the entire text.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 * **SystemVerilog**
-* **Simulador HDL** (Icarus Verilog)
+* **HDL Simulator** (Icarus Verilog or similar)
 
-## Estrutura do Projeto
+## Project Structure
 
 ```
 .
@@ -29,32 +29,38 @@ O objetivo é processar uma entrada de texto (`plaintext`) e aplicar sobre ela u
 │   ├── cipher_tb.sv
 │   └── cipher_bonus_tb.sv
 └── README.md
+
 ```
 
-## Como Simular
+## How to Simulate
 
-### Pré-requisitos
+### Prerequisites
 
-* Um simulador SystemVerilog instalado e configurado.
+* A SystemVerilog simulator installed and configured on your machine.
 
-### Simulação
+### Simulation
 
-O projeto contém testbenches (`tb/`) para validar cada módulo.
+The project includes testbenches (`tb/`) to validate each module.
 
-1.  **Para o módulo principal**, compile e simule os arquivos:
-    * `rtl/cipher.sv`
-    * `tb/cipher_tb.sv`
+1. **For the main module**, compile and simulate:
+* `rtl/cipher.sv`
+* `tb/cipher_tb.sv`
 
-2.  **Para o módulo bônus**, compile e simule os arquivos:
-    * `rtl/cipher_bonus.sv`
-    * `tb/cipher_bonus_tb.sv`
 
-As formas de onda esperadas podem ser consultadas no arquivo `doc/documentacao.pdf`.
+2. **For the bonus module**, compile and simulate:
+* `rtl/cipher_bonus.sv`
+* `tb/cipher_bonus_tb.sv`
 
-## Autor
+
+
+You can check the expected waveforms in the `doc/documentacao.pdf` file.
+
+## Author
 
 **Marney Santos de Melo**
 
-## Licença
+## License
 
-Este projeto está sob a licença MIT.
+This project is under the MIT license.
+
+---
