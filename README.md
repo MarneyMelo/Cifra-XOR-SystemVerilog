@@ -62,5 +62,3 @@ You can check the expected waveforms in the `doc/documentacao.pdf` file.
 ## License
 
 This project is under the MIT license.
-
----
